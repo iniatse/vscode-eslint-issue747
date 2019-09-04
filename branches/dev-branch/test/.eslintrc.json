@@ -1,0 +1,17 @@
+{
+		"env": {
+			"node": true
+		},
+		"globals": {
+		
+		},
+		"parserOptions": {
+			"ecmaVersion": 8
+		},
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+				]
+    }
+}

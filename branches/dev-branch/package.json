@@ -1,0 +1,21 @@
+{
+  "name": "@softengine/tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"./{,!(node_modules)/**}/*.test.js\" -timeout 10000",
+		"eslint": "eslint \"./**/*.js\" --ignore-path \".eslintignore\"",
+		"eslintNodeTestCode": "eslint \"./test/**/*.test.js\" --config \"test/.eslintrc.json\" --ignore-path \"test/.eslintignore\""
+  },
+  "author": "Gernot Pokorny",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "express": "^4.17.1",
+    "mocha": "^6.1.4",
+    "puppeteer": "^1.17.0"
+  }
+}

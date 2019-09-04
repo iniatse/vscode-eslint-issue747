@@ -1,0 +1,6 @@
+{
+	"eslint.workingDirectories": [
+		"./branches/dev-branch", 
+		"./branches/dev-branch/test"
+	]
+}
