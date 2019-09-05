@@ -43,8 +43,7 @@ Why should it work like that?
 
 It also works like that when I execute eslint via the two scripts defined within the `branches\dev-branch\package.json`. These two scripts yield the IMO correct and expected errors. It would be nice when vscode-eslint would yield the combined output of those scripts with no duplicates.
 
-At the moment everything behaves totally unnatural to me. The logic seems to be very overcomplicated or too simple, depending on how you see it. Would you not expect that the things that I mentioned under the point "The following works not as expected:" to actually work in this example? I mean how to cope with the current situation in this example? IMO it would be so simple and natual if this simply with these two config-files and ingore-files.
-
+At the moment everything behaves totally unnatural to me. The logic seems to be very overcomplicated or too simple, depending on how you see it. Would you not expect that the things that I mentioned under the point "The following works not as expected:" to actually work in this example? I mean how to cope with the current situation in this example? IMO it would be so simple and natural if this simply works with these two config-files and ingore-files.
 
 ## Ask for help
 
