@@ -35,7 +35,7 @@ Terminology: "above a file" is defined like this: `C:\bla.txt` is defined above 
 
 - Every `.eslintrc.json` above a file should apply to it whereby the last `.eslintrc.json` (in this case `branches\dev-branch\test\.eslintrc.json`) takes precedence only for a rule which is defined in both. 
 
-- If a rule is defined within `branches\dev-branch\.eslintrc.json`, but not `branches\dev-branch\test\.eslintrc.json`, then `branches\dev-branch\.eslintignore` applies to that rule and not `branches\dev-branch\test\.eslintignore` in case `branches\dev-branch\test\html\js\main.src.js` is the current file which gets linted.
+- If a rule is defined within `branches\dev-branch\.eslintrc.json`, but not `branches\dev-branch\test\.eslintrc.json`, then `branches\dev-branch\.eslintignore` should apply to that rule and not `branches\dev-branch\test\.eslintignore` in case `branches\dev-branch\test\html\js\main.src.js` is the current file which gets linted. At the moment it seems like that the rules and ignore files just get merged, which means that you can end up with an ignore for a rule that you most likely never intended. I would expect that `branches\dev-branch\.eslintignore` applies for rules defined in `branches\dev-branch\.eslintrc.json` and not that `branches\dev-branch\test\.eslintignore` can ignore rules from  `branches\dev-branch\.eslintrc.json`.
 
 I hope these three points give you an idea on how I think it should work.
 
@@ -44,6 +44,7 @@ Why should it work like that?
 It also works like that when I execute eslint via the two scripts defined within the `branches\dev-branch\package.json`. These two scripts yield the IMO correct and expected errors. It would be nice when vscode-eslint would yield the combined output of those scripts with no duplicates.
 
 At the moment everything behaves totally unnatural to me. The logic seems to be very overcomplicated or too simple, depending on how you see it. Would you not expect that the things that I mentioned under the point "The following works not as expected:" to actually work in this example? I mean how to cope with the current situation in this example? IMO it would be so simple and natual if this simply with these two config-files and ingore-files.
+
 
 ## Ask for help
 
