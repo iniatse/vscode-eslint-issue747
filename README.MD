@@ -53,4 +53,4 @@ I also have a hard time to understand what it means something is resolved relati
 
 How do I solve the problem? Do I have to use the workaround I mentioned within my opening post?
 
-If something it not clear enough, then I will give it another try.
+If something it not clear enough, then I will try to explain it better.
