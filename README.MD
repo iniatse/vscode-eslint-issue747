@@ -23,7 +23,7 @@ The following works not as expected:
 
 ## Conclusion
 
-It seems like `branches\dev-branch\test\.eslintignore` is blocking every rule from `branches\dev-branch\.eslintrc.json` to be applied to `branches\dev-branch\test\html\js\main.src.js`. That makes no sense at all to me, because like that I do currently use the workaround which I explained within the opening post of the issue.
+It seems like `branches\dev-branch\test\.eslintignore` is blocking rules from `branches\dev-branch\.eslintrc.json` to be applied to `branches\dev-branch\test\html\js\main.src.js`. That makes no sense at all to me, because like that I do currently use the workaround which I explained within the opening post of the issue.
 
 Also `branches\dev-branch\.eslintignore` does not apply to rules from `branches\dev-branch\.eslintrc.json` which are applied to `branches\dev-branch\test\automatedTestWithinBrowser.test.js`. See "Strings must use singlequote." error. I would like that error to not happen when I define my configs and ignores like in this example. Why should some rule form `.eslintrc.json` be applied, but a `.eslintignore` file on the same level is void. IMO a more granular approach is required for ignores.
 
